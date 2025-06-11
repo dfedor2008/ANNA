@@ -12,6 +12,7 @@ Components:
 -Gyroscope-ICM-20948  
 -Linear Regulator-AMS1117-3.3  
 -Micro SD Card Slot- MEM2061-01-188-00-A_REVA 
+
 **Future Itterations:**
 
 Future components will have a GPS ATGM336H, with a passive antenna. It will allow for telemetry data up to 50km.
