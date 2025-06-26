@@ -13,8 +13,12 @@ Components:
 -Linear Regulator-AMS1117-3.3  
 -Micro SD Card Slot- MEM2061-01-188-00-A_REVA 
 
+Current Status 6/26/2025:
+ANNA has a functional gyroscope, BME 280, MicroSD card slot, and linear regulor, the RF radio is still during testing.
+
 **Future Itterations:**
 
 Future components will have a GPS ATGM336H, with a passive antenna. It will allow for telemetry data up to 50km.
+
 
 
