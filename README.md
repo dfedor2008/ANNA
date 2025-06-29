@@ -51,6 +51,7 @@ If you have any questions, comments, or want to donate please contact me at  daw
 There are a couple people who I want to thank in particular for their help in this project.
 
 -**Max Kendal**-
+
 -**Seth Kendal**-
 -
 
