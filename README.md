@@ -35,6 +35,29 @@ Future components will have a GPS ATGM336H, with a passive antenna. It will allo
 
 The SX1626 is a very powerful and cheap (around $3.5) radio module. The Sx1626 uses Lora to communicate on the 915 kHz band which doesn't require a HAM radio license. This allows for amateur aerospace to use this radio.
 
+#**LED Behavior:**
+-LED blinks in constant intervals ( 0.5 sec On and 0.5 sec Off)- The BME280, the SD card slot, or the Gyroscope is working correctly.
+
+
+-LED blinks in long and short intervals ( 0.9 sec on, and 0.1 sec off)- The BME280, the SD card slot, or the Gyroscope is not working correctly.
+
+-LED is off- ANNA is not powered correctly
+
+**Contact Me:**
+
+If you have any questions, comments, or want to donate please contact me at  dawid.fedor08@gmail.com. 
+
+**Special Thank You:**
+There are a couple people who I want to thank in particular for their help in this project.
+
+-**Max Kendal**-
+-**Seth Kendal**-
+-
+
+
+
+
+
 
 
 
