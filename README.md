@@ -50,10 +50,13 @@ If you have any questions, comments, or want to donate please contact me at  daw
 **Special Thank You:**
 There are a couple people who I want to thank in particular for their help in this project.
 
--**Max Kendal**-
+-**Max Kendal**-for your extensive help with the design, coding and logistics of the project.
 
--**Seth Kendal**-
--
+-**Seth Kendal**- for help with logistics
+
+-**Bob Phinney**- for funding on the project
+
+-**Szymon Fedor**- For donating time to drive me to Sci-Tech
 
 
 
