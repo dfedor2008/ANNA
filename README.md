@@ -13,14 +13,19 @@ Anna is a rocket computer with a gyroscope, Mico SD Card, radio module, and pres
 
 Components:
 -Microcontroller- ATSAMD21G18A-A  
+
 -RF radio- SX1262 -A powerful and cheap 2 way radio.
+
 -Enviromental Sensor- BME280 - A cheap and reliable Bosh Sensor which measures humidity, temperature and pressure.
+
 -Gyroscope-ICM-20948 - A gyroscope which outputs 3d axis orientation, temperature, and acceleration.
+
 -Linear Regulator-AMS1117-3.3  
+
 -Micro SD Card Slot- MEM2061-01-188-00-A_REVA - A cheap SD card slot.
 
 **Current Status 6/26/2025:**
-ANNA has a functional gyroscope, BME 280, MicroSD card slot, and linear regulor, the RF radio is still during testing.
+ANNA has a functional gyroscope, BME 280, MicroSD card slot, and linear regulator, the RF radio is during testing phase.
 
 **Future Itterations:**
 
