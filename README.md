@@ -29,7 +29,11 @@ ANNA has a functional gyroscope, BME 280, MicroSD card slot, and linear regulato
 
 **Future Itterations:**
 
-Future components will have a GPS ATGM336H, with a passive antenna. It will allow for telemetry data up to 50km.
+Future components will have a GPS ATGM336H, with a passive antenna. It will allow for telemetry data up to 13kM.
+
+#**Radio Specification**
+
+The SX1626 is a very powerful and cheap (around $3.5) radio module. The Sx1626 uses Lora to communicate on the 915 kHz band which doesn't require a HAM radio license. This allows for amateur aerospace to use this radio.
 
 
 
