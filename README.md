@@ -1,5 +1,4 @@
 # ANNA- High Altitude Rocket Computer
-##**ANNA**
 
 ![Untitled](https://github.com/user-attachments/assets/5f8c6b52-9430-48d5-be35-250324938b7b)
 
