@@ -1,5 +1,7 @@
 # ANNA- High Altitude Rocket Computer
-![POL_COA_Pilawa svg](https://github.com/user-attachments/assets/0d7092b1-8683-4285-91ed-c0914ee1125b)
+**ANNA**
+![POL_COA_Pilawa svg (1)](https://github.com/user-attachments/assets/422c7888-dd12-4f7c-811c-52cb1a4b19ff)
+
 
 ![20250626_141647](https://github.com/user-attachments/assets/3f038551-7a4c-41fe-a39a-b8c42a30b9a6)
 
