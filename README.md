@@ -43,6 +43,17 @@ The SX1626 is a very powerful and cheap (around $3.5) radio module. The Sx1626 u
 
 -LED is off- ANNA is not powered correctly
 
+**Setting Up ANNA**
+**1**   Download Arduino IDE from this link (it's free):
+
+  https://www.arduino.cc/en/software/
+
+**2**    Upload the code provided on my github.
+
+**3**   Connect the board to the computer and select
+  
+
+
 **Contact Me:**
 
 If you have any questions, comments, or want to donate please contact me at  dawid.fedor08@gmail.com. 
@@ -52,7 +63,7 @@ There are a couple people who I want to thank in particular for their help in th
 
 -**Max Kendal**-for your extensive help with the design, coding and logistics of the project.
 
--**Seth Kendal**- for help with logistics
+-**Seth Kendal**- for help with logistics and general support throughout the project
 
 -**Bob Phinney**- for funding on the project
 
