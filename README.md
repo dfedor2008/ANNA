@@ -60,6 +60,7 @@ The SX1626 is a very powerful and cheap (around $3.5) radio module. The Sx1626 u
 If you have any questions, comments, or want to donate please contact me at  dawid.fedor08@gmail.com. 
 
 **Special Thank You:**
+
 There are a couple people who I want to thank in particular for their help in this project.
 
 -**Max Kendal**-for your extensive help with the design, coding and logistics of the project.
