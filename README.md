@@ -3,8 +3,6 @@
 ![Untitled](https://github.com/user-attachments/assets/5f8c6b52-9430-48d5-be35-250324938b7b)
 
 
-![20250626_141647](https://github.com/user-attachments/assets/3f038551-7a4c-41fe-a39a-b8c42a30b9a6)
-
 #Goal:
 
 Make a cheap ( under a hundred dollars) rocket computer which can serve as a rocket computer for small and large scale launches. To achieve this, the rocket computer has to be very compact so that it can fit in small rockets. 
@@ -13,7 +11,7 @@ Make a cheap ( under a hundred dollars) rocket computer which can serve as a roc
 Anna is a rocket computer with a gyroscope, Mico SD Card, radio module, and pressure, humidity and temperature sensor. Future revisions will have a GPS and also pyro channels.
 
 
-Components:
+## Components:
 -Microcontroller- ATSAMD21G18A-A  
 
 -RF radio- SX1262 -A powerful and cheap 2 way radio.
@@ -49,10 +47,12 @@ The SX1626 is a very powerful and cheap (around $3.5) radio module. The Sx1626 u
 **1**   Download Arduino IDE from this link (it's free):
 
   https://www.arduino.cc/en/software/
+**2**Download the SAMD core:
+https://docs.arduino.cc/learn/starting-guide/cores/ 
 
-**2**    Upload the code provided on my github.
+**3**    Upload the code provided on my github.
 
-**3**   Connect the board to the computer and select
+**4**   Connect the board to the computer and select Arduino 0
   
 
 
@@ -71,3 +71,5 @@ There are a couple people who I want to thank in particular for their help in th
 -**Bob Phinney**- for funding on the project
 
 -**Szymon Fedor**- For donating time to drive me to Sci-Tech
+
+**License:**
