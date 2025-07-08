@@ -5,7 +5,7 @@
 
 ![20250626_141647](https://github.com/user-attachments/assets/3f038551-7a4c-41fe-a39a-b8c42a30b9a6)
 
-Goal:
+#Goal:
 
 Make a cheap ( under a hundred dollars) rocket computer which can serve as a rocket computer for small and large scale launches. To achieve this, the rocket computer has to be very compact so that it can fit in small rockets. 
 
