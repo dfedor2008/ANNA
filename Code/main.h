@@ -5,6 +5,7 @@
 #include <SD.h>
 #include "ICM_20948.h"
 #include <Scheduler.h>
+#include <MadgwickAHRS.h>
 
 #define WIRE_PORT Wire
 #define Serial SerialUSB
@@ -23,7 +24,7 @@ void problem_led();
 void BME280();
 void ICM20948();
 void clearSDCard();
-void make_Acel_file();
+void make_ICM20498_file();
 void make_BME_file();
 
 bool SD_Card = false;
@@ -51,7 +52,7 @@ void setup() {
     Serial.println("SD card initialized.");
     clearSDCard();
     make_BME_file();
-    make_Acel_file();
+    make_ICM20498_file();
 
     SD_Card = true;
   }
