@@ -30,7 +30,7 @@ Future versions will include GPS and pyro channel support.
 
 ---
 
-## Current Status *(as of 6/26/2025)*
+## Current Status *(as of 7/26/2025)*
 -  Gyroscope (ICM-20948): Functional  
 -  BME280 Sensor: Functional  
 -  MicroSD Slot: Functional  
