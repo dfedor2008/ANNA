@@ -40,13 +40,13 @@ Future versions will include GPS and pyro channel support.
 ---
 
 ## Planned Features
-- **GPS Support:** ATGM336H module with passive antenna (for telemetry up to 13km)  
+- **GPS Support:** For positioning and recovery  
 - **Pyro Channels:** For recovery deployment and staging
 
 ---
 
 ## Radio Specification
-The **SX1262** LoRa radio transmits in the 915 MHz ISM band. No HAM license is required in the U.S. to operate. It's inexpensive (~$3.50) and supports long-range two-way communication suitable for rocket telemetry.
+The **SX1262** LoRa radio transmits in the 915 MHz ISM band. No HAM license is required in the U.S. to operate. So you don't need to have to pass any tests to operate it. It's inexpensive (~$3.50) and supports long-range two-way communication suitable for rocket telemetry.
 
 ---
 
@@ -83,7 +83,7 @@ Have questions, want to donate, or collaborate?
 ## Special Thanks
 
 - **Max Kendall** – For design, code, and logistics support  
-- **Seth Kendall** – For logistics and ongoing project encouragement  
+- **Seth Kendall** – For logistics and general support  
 - **Bob Phinney** – For project funding support  
 - **Szymon Fedor** – For transportation and logistical help to Sci-Tech
 
