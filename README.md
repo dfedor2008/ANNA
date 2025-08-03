@@ -92,3 +92,11 @@ Have questions, want to donate, or collaborate?
 ## License
 
 This project is released under GNU GENERAL PUBLIC LICENSE and CERN Open Hardware Licence Version 2 
+
+## Pictures:
+
+![PXL_20250628_222645743 MP](https://github.com/user-attachments/assets/f4d5798f-349a-4c04-b334-0f21a0a2898a)
+
+![PXL_20250626_224915851](https://github.com/user-attachments/assets/80ff6a53-6ed6-44d7-bf44-bd0294b0c7e5)
+
+
