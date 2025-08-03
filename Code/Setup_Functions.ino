@@ -1,4 +1,3 @@
-
 void begining_led() {
   for (int x = 0; x < 5; x++) {
 
@@ -27,5 +26,20 @@ void problem_led() {
   // Set PA03 low
   PORT->Group[0].OUTCLR.reg = (1 << 3);
   delay(100);
+}
 
+void start_functions() {
+  Scheduler.startLoop(loopsetup);
+  PORT->Group[0].DIRSET.reg = (1 << 3);
+  PORT->Group[0].OUTCLR.reg = (1 << 3);
+  rtc.begin(false);
+  startTick = millis();
+}
+void time_keeping() {
+  uint32_t nowTick = millis();
+  elapsed = nowTick - startTick;
+
+  Serial.print("Time since reset: ");
+  Serial.print(elapsed / 1000);
+  Serial.println(" s");
 }
