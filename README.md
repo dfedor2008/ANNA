@@ -1,75 +1,94 @@
-# ANNA- High Altitude Rocket Computer
+# ANNA - High Altitude Rocket Computer
 
-![Untitled](https://github.com/user-attachments/assets/5f8c6b52-9430-48d5-be35-250324938b7b)
+![ANNA Banner](https://github.com/user-attachments/assets/5f8c6b52-9430-48d5-be35-250324938b7b)
 
+## Project Goal
+Create a compact, affordable (under $100) and reliable rocket computer that can support both small and large-scale model rocket launches.
 
-#Goal:
+## What is ANNA?
+ANNA is a high-altitude rocket computer originally developed for a balloon-launched rocket project. It is designed to record key environmental and motion data during rocket flight, with plans to add telemetry and recovery features in future iterations.
 
-Make a cheap ( under a hundred dollars) rocket computer which can serve as a rocket computer for small and large scale launches. To achieve this, the rocket computer has to be very compact so that it can fit in small rockets. 
+Current features include:
+- 3D orientation (gyroscope)
+- Acceleration data
+- Environmental measurements (temperature, pressure, humidity)
+- MicroSD data logging
+- Radio telemetry (in testing)
 
-# What is ANNA?
-Anna is a rocket computer with a gyroscope, Mico SD Card, radio module, and pressure, humidity and temperature sensor. Future revisions will have a GPS and also pyro channels.
+Future versions will include GPS and pyro channel support.
 
+---
 
-## Components:
--Microcontroller- ATSAMD21G18A-A  
+## Components
 
--RF radio- SX1262 -A powerful and cheap 2 way radio.
+- **Microcontroller:** ATSAMD21G18A-A  
+- **Radio Module:** SX1262 – Long-range, LoRa-based radio operating in the 915 MHz band  
+- **Environmental Sensor:** BME280 – Measures temperature, pressure, and humidity  
+- **IMU:** ICM-20948 – Provides 3D orientation and acceleration data  
+- **Voltage Regulation:** AMS1117-3.3 – 3.3V linear regulator  
+- **Storage:** MEM2061-01-188-00-A_REVA microSD slot
 
--Enviromental Sensor- BME280 - A cheap and reliable Bosh Sensor which measures humidity, temperature and pressure.
+---
 
--Gyroscope-ICM-20948 - A gyroscope which outputs 3d axis orientation, temperature, and acceleration.
+## Current Status *(as of 6/26/2025)*
+- ✅ Gyroscope (ICM-20948): Functional  
+- ✅ BME280 Sensor: Functional  
+- ✅ MicroSD Slot: Functional  
+- ✅ Power Regulation: Functional  
+- 🔄 SX1262 Radio: Testing phase
 
--Linear Regulator-AMS1117-3.3  
+---
 
--Micro SD Card Slot- MEM2061-01-188-00-A_REVA - A cheap SD card slot.
+## Planned Features
+- **GPS Support:** ATGM336H module with passive antenna (for telemetry up to 13km)  
+- **Pyro Channels:** For recovery deployment and staging
 
-**Current Status 6/26/2025:**
-ANNA has a functional gyroscope, BME 280, MicroSD card slot, and linear regulator, the RF radio is during testing phase.
+---
 
-**Future Itterations:**
+## Radio Specification
+The **SX1262** LoRa radio transmits in the 915 MHz ISM band. No HAM license is required in the U.S. to operate. It's inexpensive (~$3.50) and supports long-range two-way communication suitable for rocket telemetry.
 
-Future components will have a GPS ATGM336H, with a passive antenna. It will allow for telemetry data up to 13kM.
+---
 
-#**Radio Specification**
+## LED Behavior
 
-The SX1626 is a very powerful and cheap (around $3.5) radio module. The Sx1626 uses Lora to communicate on the 915 kHz band which doesn't require a HAM radio license. This allows for amateur aerospace to use this radio.
+| LED Pattern                       | Meaning                                 |
+|----------------------------------|-----------------------------------------|
+| Blinking 0.5s ON / 0.5s OFF      | All sensors are functioning             |
+| Blinking 0.9s ON / 0.1s OFF      | At least one sensor failed to initialize |
+| Off                              | Power issue / board not active          |
 
-#**LED Behavior:**
--LED blinks in constant intervals ( 0.5 sec On and 0.5 sec Off)- The BME280, the SD card slot, or the Gyroscope is working correctly.
+---
 
+## Setting Up ANNA
 
--LED blinks in long and short intervals ( 0.9 sec on, and 0.1 sec off)- The BME280, the SD card slot, or the Gyroscope is not working correctly.
+1. **Download Arduino IDE:**  
+   https://www.arduino.cc/en/software
 
--LED is off- ANNA is not powered correctly
+2. **Install SAMD Core:**  
+   https://docs.arduino.cc/learn/starting-guide/cores/
 
-**Setting Up ANNA**
-**1**   Download Arduino IDE from this link (it's free):
+3. **Download and upload the firmware** from this repository to ANNA.
 
-  https://www.arduino.cc/en/software/
-**2**Download the SAMD core:
-https://docs.arduino.cc/learn/starting-guide/cores/ 
+4. **Connect the board** to your computer and select *Arduino Zero (Native USB Port)* as the target board.
 
-**3**    Upload the code provided on my github.
+---
 
-**4**   Connect the board to the computer and select Arduino 0
-  
+## Contact
+Have questions, want to donate, or collaborate?  
+📧 **dawid.fedor08@gmail.com**
 
+---
 
-**Contact Me:**
+## Special Thanks
 
-If you have any questions, comments, or want to donate please contact me at  dawid.fedor08@gmail.com. 
+- **Max Kendall** – For design, code, and logistics support  
+- **Seth Kendall** – For logistics and ongoing project encouragement  
+- **Bob Phinney** – For project funding support  
+- **Szymon Fedor** – For transportation and logistical help to Sci-Tech
 
-**Special Thank You:**
+---
 
-There are a couple people who I want to thank in particular for their help in this project.
+## License
 
--**Max Kendal**-for your extensive help with the design, coding and logistics of the project.
-
--**Seth Kendal**- for help with logistics and general support throughout the project
-
--**Bob Phinney**- for funding on the project
-
--**Szymon Fedor**- For donating time to drive me to Sci-Tech
-
-**License:**
+This project is released under [insert applicable license, e.g., MIT or GPLv3]
