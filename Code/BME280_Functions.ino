@@ -3,7 +3,7 @@ void BME280() {
   float pres = bme.readPressure();
   float humidity = bme.readHumidity();
   float Alt = bme.readAltitude(SEALEVELPRESSURE_HPA);
-
+  Serial.println();
   Serial.print("Temperature = ");
   Serial.print(temp);
   Serial.print(" °C          ");
@@ -32,12 +32,12 @@ void BME280() {
     bmeFile.print(Alt);
     bmeFile.print(" m          ");
     bmeFile.print("Seconds after launch  ");
-    bmeFile.println(sec_after_launch);
+    bmeFile.println(elapsed/1000);
     bmeFile.close();
   } else {
     Serial.println("Failed to open BME_Data.txt");
   }
-  delay(10);
+//  delay(10);
 
   Serial.println();
 }
