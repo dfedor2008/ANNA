@@ -91,4 +91,4 @@ Have questions, want to donate, or collaborate?
 
 ## License
 
-This project is released under [insert applicable license, e.g., MIT or GPLv3]
+This project is released under GNU GENERAL PUBLIC LICENSE and CERN Open Hardware Licence Version 2 
