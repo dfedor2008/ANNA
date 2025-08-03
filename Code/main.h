@@ -6,6 +6,7 @@
 #include "ICM_20948.h"
 #include <Scheduler.h>
 #include <MadgwickAHRS.h>
+#include "RTCZero.h"
 
 #define WIRE_PORT Wire
 #define Serial SerialUSB
@@ -16,8 +17,15 @@ Adafruit_BME280 bme;
 unsigned long delayTime;
 Sd2Card card;
 ICM_20948_I2C myICM;
+RTCZero rtc;
 
 const int chipSelect = 5;
+volatile uint32_t startTick = 0;
+volatile uint32_t elapsed = 0;
+float gx_offset = 0;
+float gy_offset = 0;
+float gz_offset = 0;
+int samples = 1000;
 void begining_led();
 void set_up_led();
 void problem_led();
@@ -26,19 +34,21 @@ void ICM20948();
 void clearSDCard();
 void make_ICM20498_file();
 void make_BME_file();
+void start_functions();
+void time_keeping();
+void calibrateGyro();
 
 bool SD_Card = false;
 bool status_BME280 = false;
 bool status_ICM20948 = false;
-float sec_after_launch = 0;
 
 
 void setup() {
-  Scheduler.startLoop(loopsetup);
-  PORT->Group[0].DIRSET.reg = (1 << 3);
+  start_functions();
   begining_led();
   Serial.begin(9600);
-  while (!Serial)
+  unsigned long serialTimeout = millis();
+  while (!Serial && millis() - serialTimeout < 3000)
     ;
   Serial.println();
   Serial.println("                            ANNA Project by Dawid Fedor");
@@ -80,20 +90,21 @@ void setup() {
     }
   }
   Serial.println("ICM20948 connected at 0x68 and initialized!");
+  calibrateGyro();
   delay(1000);
 }
 void loop() {
   BME280();
-  Serial.print("Sec after Launch:");
-  Serial.println(sec_after_launch);
+  time_keeping();
   ICM20948();
   delay(100);
-  sec_after_launch=sec_after_launch+0.1;
 }
 
 void loopsetup() {
   set_up_led();
-  if (SD_Card == false || status_BME280 == false || status_ICM20948 == false) {
-    problem_led();
+  if (elapsed > 3) {
+    if (SD_Card == false || status_BME280 == false || status_ICM20948 == false) {
+      problem_led();
+    }
   }
 }
