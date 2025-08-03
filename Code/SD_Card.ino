@@ -16,7 +16,7 @@ void clearSDCard() {
 void make_ICM20498_file() {
   File accelFile = SD.open("ICM20498.txt", FILE_WRITE);
   if (accelFile && accelFile.size() == 0) {
-    accelFile.println("Time,          AccelX, AccelY, AccelZ      GyroX, GyroY ,GyroZ   ");
+    accelFile.println("Time,                     AccelX, AccelY, AccelZ      GyroX, GyroY ,GyroZ   ");
     accelFile.close();
   }
 }
