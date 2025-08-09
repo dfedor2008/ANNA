@@ -75,7 +75,7 @@ The **SX1262** LoRa radio transmits in the 915 MHz ISM band. No HAM license is r
 ---
 
 ## Contact
-Have questions, want to donate, or collaborate?  
+Have questions, want to donate, or just say Hi?  
  **dawid.fedor08@gmail.com**
 
 ---
