@@ -79,6 +79,11 @@ Have questions, want to donate, or just say Hi?
  **dawid.fedor08@gmail.com**
 
 ---
+## Circut Butler 
+<img width="522" height="391" alt="Untitled" src="https://github.com/user-attachments/assets/06e3ae62-af05-45d0-a1b7-0cff9c340eda" />
+I want to thank Circuit Butler for sponsoring my project. They have been incredibly helpful, and without their support, my project wouldn’t have been able to be completed. Their fast PCB turnaround has allowed me to quickly test and iterate, which has been crucial to the development process. Additionally, whenever I had any questions, their response time was quick and their answers were always thorough and helpful. I highly recommend Circuit Butler to anyone looking for reliable and efficient PCBs!
+
+---
 
 ## Special Thanks
 
