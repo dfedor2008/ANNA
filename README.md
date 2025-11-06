@@ -5,6 +5,10 @@
 ## Project Goal
 Create a compact, affordable (under $100) and reliable rocket computer that can support both small and large-scale model rocket launches.
 
+## How this project came to be
+This rocket computer is part of a larger project: Moonstone. This project is a colaborative effort to launch a rocket off a High ALtitude Balloon. The link below is to slides which tell about the orgin of the project and other electronics which was done by me!!
+https://docs.google.com/presentation/d/1WYTajgJSp5qMuNHan1WnkCnDspPzAP0AVPiKrxGjS5Q/edit?usp=sharing
+
 ## What is ANNA?
 ANNA is a high-altitude rocket computer originally developed for a balloon-launched rocket project. It is designed to record key environmental and motion data during rocket flight, with plans to add telemetry and recovery features in future iterations.
 
