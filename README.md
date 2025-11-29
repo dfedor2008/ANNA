@@ -34,16 +34,16 @@ Future versions will include GPS and pyro channel support.
 
 ---
 
-## Current Status *(as of 7/26/2025)*
+## Current Status *(as of 9/26/2025)*
 -  Gyroscope (ICM-20948): Functional  
 -  BME280 Sensor: Functional  
 -  MicroSD Slot: Functional  
 -  Power Regulation: Functional  
--  SX1262 Radio: Testing phase
+-  SX1262 Radio: Functional
 
 ---
 
-## Planned Features
+## Features currently developed in new Board.
 - **GPS Support:** For positioning and recovery  
 - **Pyro Channels:** For recovery deployment and staging
 
